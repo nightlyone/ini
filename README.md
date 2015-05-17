@@ -12,7 +12,7 @@ package documentation at [![GoDoc][3]][4]
 
 LICENSE
 -------
-BSD
+MIT
 
 
 NOTE: Still work in progress, just a proof of concept, code heavily in flux. No docs yet, but examples.
