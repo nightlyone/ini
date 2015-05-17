@@ -1,4 +1,5 @@
-# ini
+ini
+======
 Go package that parses [*.ini][5] files and includes a tokenizer for it.
 
 package documentation at [![GoDoc][3]][4]
