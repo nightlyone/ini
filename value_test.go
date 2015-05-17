@@ -5,7 +5,7 @@ import "testing"
 func TestUnquote(t *testing.T) {
 
 	tests := [...]struct {
-		in, out Value
+		in, out string
 		err     error
 	}{
 		{},
@@ -26,7 +26,7 @@ func TestUnquote(t *testing.T) {
 	}
 
 	for i, test := range tests {
-		got, err := test.in.Unquote()
+		got, err := NewValue(test.in).Unquote()
 		want := test.out
 		switch {
 		case err != nil && test.err == nil:
@@ -35,7 +35,7 @@ func TestUnquote(t *testing.T) {
 			t.Errorf("%d: Unquote(%v) unexpected error, want '%v', got %v\n", i, test.in, test.err, err)
 		case err == nil && test.err != nil:
 			t.Errorf("%d: Unquote(%v) expected error, want '%v', got nil\n", i, test.in, test.err)
-		case got != want:
+		case got.String() != want:
 			t.Errorf("%d: unexpected value: Unquote(%v) = %q, want %q\n", i, test.in, got, want)
 		}
 	}
