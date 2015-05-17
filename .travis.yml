@@ -1,6 +1,6 @@
 language: go
 go:
-        - latest
+        - 1.4
         - tip
 
 # Only test commits to production branch and all pull requests
