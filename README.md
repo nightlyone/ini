@@ -15,7 +15,7 @@ LICENSE
 MIT
 
 
-NOTE: Still work in progress, just a proof of concept, code heavily in flux. No docs yet, but examples.
+*NOTE*: Still work in progress, just a proof of concept, code heavily in flux. No docs yet, but examples.
 
 [3]: https://godoc.org/github.com/nightlyone/ini?status.png
 [4]: https://godoc.org/github.com/nightlyone/ini
